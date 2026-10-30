@@ -1,0 +1,10 @@
+allowBuilds:
+  esbuild: true
+  lightningcss: true
+minimumReleaseAgeExclude:
+  - '@tanstack/devtools-bundler-core@0.1.4'
+  - '@tanstack/devtools-ui@0.7.2'
+  - '@tanstack/devtools-vite@0.8.6'
+  - '@tanstack/devtools@0.16.0'
+  - '@tanstack/react-devtools@0.10.14'
+  - '@types/estree@1.0.10'

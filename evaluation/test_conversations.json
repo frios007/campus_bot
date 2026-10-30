@@ -1,0 +1,610 @@
+{
+  "version": "1.0",
+  "description": "Conjunto de prueba de CampusBot: frases etiquetadas (NLU), consultas con documento esperado (recuperación) y diálogos de referencia.",
+  "nlu_cases": [
+    {
+      "text": "hola",
+      "intent": "saludar"
+    },
+    {
+      "text": "buenas tardes",
+      "intent": "saludar"
+    },
+    {
+      "text": "buenos dias, como estas?",
+      "intent": "saludar"
+    },
+    {
+      "text": "ola q tal",
+      "intent": "saludar"
+    },
+    {
+      "text": "saludos campusbot",
+      "intent": "saludar"
+    },
+    {
+      "text": "hey",
+      "intent": "saludar"
+    },
+    {
+      "text": "buenas noches",
+      "intent": "saludar"
+    },
+    {
+      "text": "adios",
+      "intent": "despedirse"
+    },
+    {
+      "text": "hasta luego",
+      "intent": "despedirse"
+    },
+    {
+      "text": "nos vemos",
+      "intent": "despedirse"
+    },
+    {
+      "text": "chao, eso era todo",
+      "intent": "despedirse"
+    },
+    {
+      "text": "bye",
+      "intent": "despedirse"
+    },
+    {
+      "text": "hasta pronto",
+      "intent": "despedirse"
+    },
+    {
+      "text": "ya me voy, hasta luego",
+      "intent": "despedirse"
+    },
+    {
+      "text": "gracias",
+      "intent": "agradecer"
+    },
+    {
+      "text": "muchas gracias por la info",
+      "intent": "agradecer"
+    },
+    {
+      "text": "te agradezco",
+      "intent": "agradecer"
+    },
+    {
+      "text": "muy amable, gracias",
+      "intent": "agradecer"
+    },
+    {
+      "text": "grax",
+      "intent": "agradecer"
+    },
+    {
+      "text": "mil gracias",
+      "intent": "agradecer"
+    },
+    {
+      "text": "gracias, me sirvio mucho",
+      "intent": "agradecer"
+    },
+    {
+      "text": "cuando es la matricula del primer semestre?",
+      "intent": "consultar_matricula"
+    },
+    {
+      "text": "que necesito para matricularme",
+      "intent": "consultar_matricula"
+    },
+    {
+      "text": "como me inscribo en linea",
+      "intent": "consultar_matricula"
+    },
+    {
+      "text": "requisitos para matricula de nuevo ingreso",
+      "intent": "consultar_matricula"
+    },
+    {
+      "text": "hasta cuando puedo hacer la matricula de reingreso",
+      "intent": "consultar_matricula"
+    },
+    {
+      "text": "matricula extemporanea",
+      "intent": "consultar_matricula"
+    },
+    {
+      "text": "no aparezco matriculado que hago",
+      "intent": "consultar_matricula"
+    },
+    {
+      "text": "q documentos piden para el primer ingreso",
+      "intent": "consultar_matricula"
+    },
+    {
+      "text": "cuando inician las clases",
+      "intent": "consultar_calendario"
+    },
+    {
+      "text": "cuando terminan las clases del segundo semestre",
+      "intent": "consultar_calendario"
+    },
+    {
+      "text": "fechas de los parciales",
+      "intent": "consultar_calendario"
+    },
+    {
+      "text": "cuando son las vacaciones de medio año",
+      "intent": "consultar_calendario"
+    },
+    {
+      "text": "calendario academico 2027",
+      "intent": "consultar_calendario"
+    },
+    {
+      "text": "cuando es la segunda convocatoria",
+      "intent": "consultar_calendario"
+    },
+    {
+      "text": "hay clases en semana santa?",
+      "intent": "consultar_calendario"
+    },
+    {
+      "text": "que requisitos tiene programacion 2",
+      "intent": "consultar_asignatura"
+    },
+    {
+      "text": "que materias lleva el tercer semestre de sistemas",
+      "intent": "consultar_asignatura"
+    },
+    {
+      "text": "prerrequisito de estructura de datos",
+      "intent": "consultar_asignatura"
+    },
+    {
+      "text": "cuantos creditos tiene el plan de estudios",
+      "intent": "consultar_asignatura"
+    },
+    {
+      "text": "en que semestre se lleva inteligencia artificial",
+      "intent": "consultar_asignatura"
+    },
+    {
+      "text": "que clases veo en primer año",
+      "intent": "consultar_asignatura"
+    },
+    {
+      "text": "que necesito aprobar para llevar base de datos ii",
+      "intent": "consultar_asignatura"
+    },
+    {
+      "text": "cuanto cuesta la matricula",
+      "intent": "consultar_aranceles"
+    },
+    {
+      "text": "cuanto vale una constancia de estudios",
+      "intent": "consultar_aranceles"
+    },
+    {
+      "text": "donde pago los aranceles",
+      "intent": "consultar_aranceles"
+    },
+    {
+      "text": "puedo pagar con tarjeta",
+      "intent": "consultar_aranceles"
+    },
+    {
+      "text": "cuanto es el recargo por pagar tarde",
+      "intent": "consultar_aranceles"
+    },
+    {
+      "text": "precio del curso de verano",
+      "intent": "consultar_aranceles"
+    },
+    {
+      "text": "me reembolsan si pago y no curso?",
+      "intent": "consultar_aranceles"
+    },
+    {
+      "text": "que becas hay",
+      "intent": "consultar_becas"
+    },
+    {
+      "text": "como solicito una beca",
+      "intent": "consultar_becas"
+    },
+    {
+      "text": "requisitos para la beca de comedor",
+      "intent": "consultar_becas"
+    },
+    {
+      "text": "cuando abre la convocatoria de becas",
+      "intent": "consultar_becas"
+    },
+    {
+      "text": "como renuevo mi beca",
+      "intent": "consultar_becas"
+    },
+    {
+      "text": "por que se pierde la beca",
+      "intent": "consultar_becas"
+    },
+    {
+      "text": "hay ayuda economica para transporte?",
+      "intent": "consultar_becas"
+    },
+    {
+      "text": "como saco una constancia de estudios",
+      "intent": "consultar_tramite"
+    },
+    {
+      "text": "necesito un certificado de notas",
+      "intent": "consultar_tramite"
+    },
+    {
+      "text": "como retiro una asignatura",
+      "intent": "consultar_tramite"
+    },
+    {
+      "text": "quiero convalidar materias de otra universidad",
+      "intent": "consultar_tramite"
+    },
+    {
+      "text": "perdi mi carnet",
+      "intent": "consultar_tramite"
+    },
+    {
+      "text": "requisitos para practicas profesionales",
+      "intent": "consultar_tramite"
+    },
+    {
+      "text": "como pido la carta de egresado",
+      "intent": "consultar_tramite"
+    },
+    {
+      "text": "donde queda registro academico",
+      "intent": "consultar_oficina"
+    },
+    {
+      "text": "horario de atencion de caja",
+      "intent": "consultar_oficina"
+    },
+    {
+      "text": "cual es el correo de bienestar estudiantil",
+      "intent": "consultar_oficina"
+    },
+    {
+      "text": "a que hora abre la biblioteca",
+      "intent": "consultar_oficina"
+    },
+    {
+      "text": "olvide mi contraseña del portal",
+      "intent": "consultar_oficina"
+    },
+    {
+      "text": "como entro al aula virtual",
+      "intent": "consultar_oficina"
+    },
+    {
+      "text": "telefono de la coordinacion de sistemas",
+      "intent": "consultar_oficina"
+    },
+    {
+      "text": "cual es la nota minima para aprobar",
+      "intent": "consultar_reglamento"
+    },
+    {
+      "text": "cuantas faltas puedo tener",
+      "intent": "consultar_reglamento"
+    },
+    {
+      "text": "que es el examen de suficiencia",
+      "intent": "consultar_reglamento"
+    },
+    {
+      "text": "que pasa si repruebo tres veces",
+      "intent": "consultar_reglamento"
+    },
+    {
+      "text": "como funciona la primera convocatoria",
+      "intent": "consultar_reglamento"
+    },
+    {
+      "text": "puedo pedir revision de nota",
+      "intent": "consultar_reglamento"
+    },
+    {
+      "text": "que es la baja academica",
+      "intent": "consultar_reglamento"
+    },
+    {
+      "text": "quiero hablar con una persona",
+      "intent": "solicitar_asesor_humano"
+    },
+    {
+      "text": "pasame con un asesor",
+      "intent": "solicitar_asesor_humano"
+    },
+    {
+      "text": "necesito hablar con alguien de atencion estudiantil",
+      "intent": "solicitar_asesor_humano"
+    },
+    {
+      "text": "comunicame con un humano",
+      "intent": "solicitar_asesor_humano"
+    },
+    {
+      "text": "quiero un agente real",
+      "intent": "solicitar_asesor_humano"
+    },
+    {
+      "text": "me puede atender un funcionario?",
+      "intent": "solicitar_asesor_humano"
+    },
+    {
+      "text": "hablar con asesor",
+      "intent": "solicitar_asesor_humano"
+    },
+    {
+      "text": "como esta el clima hoy",
+      "intent": "fuera_de_alcance"
+    },
+    {
+      "text": "quien gano el partido de futbol",
+      "intent": "fuera_de_alcance"
+    },
+    {
+      "text": "cuentame un chiste",
+      "intent": "fuera_de_alcance"
+    },
+    {
+      "text": "hazme la tarea de calculo",
+      "intent": "fuera_de_alcance"
+    },
+    {
+      "text": "cual es la mejor pelicula del año",
+      "intent": "fuera_de_alcance"
+    },
+    {
+      "text": "dame una receta de gallo pinto",
+      "intent": "fuera_de_alcance"
+    },
+    {
+      "text": "quien es el mejor jugador de beisbol",
+      "intent": "fuera_de_alcance"
+    }
+  ],
+  "retrieval_cases": [
+    {
+      "query": "cuando inicia el primer semestre 2027",
+      "expected_doc": "01_calendario_academico_2027"
+    },
+    {
+      "query": "fechas de examenes de primera convocatoria del segundo semestre",
+      "expected_doc": "01_calendario_academico_2027"
+    },
+    {
+      "query": "cuando hay cursos de verano",
+      "expected_doc": "01_calendario_academico_2027"
+    },
+    {
+      "query": "pasos para matricularme en linea",
+      "expected_doc": "02_matricula_reingreso"
+    },
+    {
+      "query": "carga maxima de asignaturas por semestre",
+      "expected_doc": "02_matricula_reingreso"
+    },
+    {
+      "query": "tengo asignaturas bloqueadas en el portal",
+      "expected_doc": "02_matricula_reingreso"
+    },
+    {
+      "query": "documentos para matricula de nuevo ingreso",
+      "expected_doc": "03_matricula_nuevo_ingreso"
+    },
+    {
+      "query": "semana de induccion primer ingreso",
+      "expected_doc": "03_matricula_nuevo_ingreso"
+    },
+    {
+      "query": "cuanto cuesta la matricula de reingreso",
+      "expected_doc": "04_aranceles_y_pagos"
+    },
+    {
+      "query": "donde puedo pagar los aranceles",
+      "expected_doc": "04_aranceles_y_pagos"
+    },
+    {
+      "query": "recargo por pago tardio",
+      "expected_doc": "04_aranceles_y_pagos"
+    },
+    {
+      "query": "tipos de becas disponibles",
+      "expected_doc": "05_becas"
+    },
+    {
+      "query": "requisitos para mantener la beca",
+      "expected_doc": "05_becas"
+    },
+    {
+      "query": "como solicito una constancia de estudios",
+      "expected_doc": "06_constancias_y_certificados"
+    },
+    {
+      "query": "cuanto tarda el certificado de notas",
+      "expected_doc": "06_constancias_y_certificados"
+    },
+    {
+      "query": "hasta cuando puedo retirar una asignatura",
+      "expected_doc": "07_tramites_academicos"
+    },
+    {
+      "query": "convalidacion de materias de otra universidad",
+      "expected_doc": "07_tramites_academicos"
+    },
+    {
+      "query": "reposicion de carnet perdido",
+      "expected_doc": "07_tramites_academicos"
+    },
+    {
+      "query": "requisitos de programacion ii",
+      "expected_doc": "08_plan_estudios_ing_sistemas"
+    },
+    {
+      "query": "asignaturas del tercer semestre de sistemas",
+      "expected_doc": "08_plan_estudios_ing_sistemas"
+    },
+    {
+      "query": "horario del turno nocturno",
+      "expected_doc": "09_horarios_y_turnos"
+    },
+    {
+      "query": "laboratorios de computo practica libre",
+      "expected_doc": "09_horarios_y_turnos"
+    },
+    {
+      "query": "nota minima para aprobar una asignatura",
+      "expected_doc": "10_reglamento_evaluacion"
+    },
+    {
+      "query": "porcentaje de inasistencias permitido",
+      "expected_doc": "10_reglamento_evaluacion"
+    },
+    {
+      "query": "examen de suficiencia requisitos",
+      "expected_doc": "10_reglamento_evaluacion"
+    },
+    {
+      "query": "donde queda registro academico",
+      "expected_doc": "11_oficinas_y_contactos"
+    },
+    {
+      "query": "correo de bienestar estudiantil",
+      "expected_doc": "11_oficinas_y_contactos"
+    },
+    {
+      "query": "horario del comedor universitario",
+      "expected_doc": "12_servicios_estudiantiles"
+    },
+    {
+      "query": "multa por retraso en biblioteca",
+      "expected_doc": "12_servicios_estudiantiles"
+    },
+    {
+      "query": "olvide la contraseña del portal estudiantil",
+      "expected_doc": "13_plataformas_digitales"
+    },
+    {
+      "query": "como ingreso al aula virtual",
+      "expected_doc": "13_plataformas_digitales"
+    },
+    {
+      "query": "requisitos para practicas profesionales",
+      "expected_doc": "14_practicas_y_culminacion"
+    },
+    {
+      "query": "formas de culminacion de estudios monografia",
+      "expected_doc": "14_practicas_y_culminacion"
+    },
+    {
+      "query": "no aparezco matriculado despues de pagar",
+      "expected_doc": "15_preguntas_frecuentes"
+    },
+    {
+      "query": "puedo estudiar dos carreras a la vez",
+      "expected_doc": "15_preguntas_frecuentes"
+    }
+  ],
+  "dialogues": [
+    {
+      "id": "D1",
+      "description": "Saludo y consulta de matrícula (Flujo A)",
+      "turns": [
+        {
+          "user": "hola",
+          "expected_action": "template"
+        },
+        {
+          "user": "cuando es la matricula de reingreso del primer semestre?",
+          "expected_action": "answer"
+        },
+        {
+          "user": "gracias",
+          "expected_action": "template"
+        }
+      ]
+    },
+    {
+      "id": "D2",
+      "description": "Requisitos de asignatura con dato faltante (Flujo B, slot filling)",
+      "turns": [
+        {
+          "user": "que requisitos tiene la asignatura?",
+          "expected_action": "ask_slot"
+        },
+        {
+          "user": "programacion 2",
+          "expected_action": "answer"
+        }
+      ]
+    },
+    {
+      "id": "D3",
+      "description": "Fallback gradual hasta escalamiento (Flujo C)",
+      "turns": [
+        {
+          "user": "asdkj qwe",
+          "expected_action": "fallback_1"
+        },
+        {
+          "user": "zzz xx",
+          "expected_action": "fallback_2"
+        },
+        {
+          "user": "mmm ppp",
+          "expected_action": "handoff_repeated_failure"
+        }
+      ]
+    },
+    {
+      "id": "D4",
+      "description": "Solicitud explícita de asesor humano",
+      "turns": [
+        {
+          "user": "quiero hablar con una persona",
+          "expected_action": "handoff_user_request"
+        }
+      ]
+    },
+    {
+      "id": "D5",
+      "description": "Consulta fuera de alcance y retorno al dominio",
+      "turns": [
+        {
+          "user": "cuentame un chiste",
+          "expected_action": "out_of_scope"
+        },
+        {
+          "user": "bueno, que becas hay?",
+          "expected_action": "answer"
+        }
+      ]
+    },
+    {
+      "id": "D6",
+      "description": "Trámite y luego oficina",
+      "turns": [
+        {
+          "user": "como saco una constancia de estudios",
+          "expected_action": "answer"
+        },
+        {
+          "user": "y donde queda registro academico?",
+          "expected_action": "answer"
+        },
+        {
+          "user": "adios",
+          "expected_action": "template"
+        }
+      ]
+    }
+  ]
+}

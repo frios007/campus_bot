@@ -1,0 +1,45 @@
+@import 'tailwindcss';
+@plugin '@tailwindcss/typography';
+@import 'tw-animate-css';
+
+/*
+ * Identidad visual inspirada en el sitio web de la UNI (uni.edu.ni):
+ * azul institucional, amarillo de acento, fondo gris claro y tipografía Montserrat.
+ */
+@theme {
+  --font-sans: 'Montserrat', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --font-serif: 'Libre Baskerville', Georgia, 'Times New Roman', serif;
+
+  --color-uni-blue: #003891;
+  --color-uni-blue-dark: #003782;
+  --color-uni-blue-deep: #002898;
+  --color-uni-blue-soft: #b7c8e8;
+  --color-uni-blue-50: #eef3fb;
+  --color-uni-gold: #efc220;
+  --color-uni-teal: #17a2b8;
+  --color-uni-gray: #eeeeee;
+  --color-uni-ink: #212529;
+  --color-uni-muted: #5f6670;
+  --color-uni-line: #dddddd;
+}
+
+:root {
+  color-scheme: light;
+}
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+  background: var(--color-uni-gray);
+  color: var(--color-uni-ink);
+  font-family: var(--font-sans);
+}
+
+.uni-scroll::-webkit-scrollbar {
+  width: 8px;
+}
+.uni-scroll::-webkit-scrollbar-thumb {
+  background: var(--color-uni-blue-soft);
+  border-radius: 8px;
+}
